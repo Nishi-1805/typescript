@@ -1,6 +1,6 @@
 import {Router} from 'express';
 import {Todo} from '../models/todo';
-const todos: Todo[] = [];
+let todos: Todo[] = [];
 const router = Router();
 
 router.get('/', (req, res, next)=>{
