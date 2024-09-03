@@ -4,4 +4,6 @@ import todosRoutes from './routes/todos';
 const app = express();
 app.use(bodyParser.json());
 app.use(todosRoutes);
-app.listen(3000);
+app.listen(3001, () => {
+    console.log('server is running on port 3001');
+});
